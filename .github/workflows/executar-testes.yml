@@ -31,7 +31,7 @@ jobs:
 
       - name: Executar testes Robot
         run: |
-          robot --variable target_url:"${{ secrets.TARGET_APP_URL }}" \
+          robot --variable URL:"${{ secrets.TARGET_APP_URL }}" \
                 --variable admin_email:"${{ secrets.ADMIN_EMAIL }}" \
                 --variable admin_password:"${{ secrets.ADMIN_PASSWORD }}" \
                 --variable user_email:"${{ secrets.USER_EMAIL }}" \
