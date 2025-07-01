@@ -6,11 +6,11 @@ name: Executar Testes Automatizados (Robot Framework)
 on:
   # 1. Ao fazer push para o branch principal (garante que o main está sempre ok)
   push:
-    branches: [ main ]
+    branches: [ master ]
 
   # 2. Ao abrir um Pull Request para o branch main (valida o código ANTES de mergear)
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # 3. Permite rodar manualmente pela aba "Actions" do GitHub
   workflow_dispatch:
