@@ -1,0 +1,25 @@
+# Ambientes virtuais Python
+venv/
+.env/
+.venv/
+ENV/
+env/
+# PyCharm, VSCode, etc
+.idea/
+.vscode/
+# __pycache__ e arquivos temporários Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Relatórios Robot Framework
+output.xml
+log.html
+report.html
+results/
+# Playwright/Browser Library (rfbrowser) - navegadores baixados
+**/node_modules/
+**/.local-browsers/
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
