@@ -1,96 +1,122 @@
-# Projeto Cinema API - Testes Automatizados
+# 🤖 Projeto de Automação de Testes com Robot Framework
 
-Bem-vindo ao repositório de automação de testes para a API do sistema Cinema!  
-Este projeto foi desenvolvido para garantir a qualidade, robustez e confiabilidade das funcionalidades do backend de um sistema de gestão de cinemas, abrangendo desde o cadastro de filmes, sessões, reservas, usuários e teatros, até a autenticação e autorização de acessos.
+Bem-vindo ao projeto de automação de testes! Esta suíte foi construída utilizando **Robot Framework** para garantir a qualidade e a estabilidade de aplicações web e de suas APIs REST, através de testes funcionais automatizados.
 
-## Benefícios do Projeto
+## ✅ Apresentação do Projeto
 
-- **Qualidade Garantida:** Automatiza a validação de todos os fluxos críticos da API, reduzindo falhas em produção.
-- **Facilidade de Manutenção:** Permite rápida identificação de regressões a cada alteração no código.
-- **Documentação Viva:** Os testes servem como documentação prática dos endpoints e regras de negócio.
-- **Acelera o Desenvolvimento:** Desenvolvedores podem testar rapidamente novas funcionalidades e correções.
-- **Padronização:** Uso de boas práticas em automação, com keywords reutilizáveis e organização modular.
-- **Ambiente Seguro:** Garante que permissões e autenticações estejam sempre corretas.
+Este projeto é uma suíte de testes automatizados `end-to-end` que valida as principais funcionalidades de um sistema, dividida em duas frentes de atuação:
 
-## Pré-requisitos
+1.  **Testes de API:** Validam os `endpoints` da aplicação, cobrindo operações de CRUD (Create, Read, Update, Delete) para recursos como autenticação, usuários, filmes, etc. Garante que a lógica de negócio no backend funcione como esperado.
+2.  **Testes de Web (UI):** Simulam a interação de um usuário real com a interface da aplicação, validando fluxos críticos, elementos visuais e a experiência do usuário (UX) no frontend.
 
-- Python 3.12+
-- [pip](https://pip.pypa.io/en/stable/)
-- [Robot Framework](https://robotframework.org/)
-- [RequestsLibrary](https://github.com/MarketSquare/robotframework-requests)
-- [FakerLibrary](https://github.com/guykisel/robotframework-faker)
-- Backend da API Cinema rodando localmente ou acessível via rede
+O projeto foi estruturado para ser altamente legível e manutenível, utilizando as melhores práticas do Robot Framework, como a separação de casos de teste (`tests`), recursos reutilizáveis (`resources`) e configuração de ambiente.
 
-## Instalação
+## 🏆 Principais Benefícios
 
-1. **Clone o repositório:**
-   ```bash
-   git clone <url-do-repositorio>
-   cd <pasta-do-projeto>
-   ```
+* **Garantia de Qualidade Contínua:** Automatiza a execução de testes de regressão, permitindo que novas funcionalidades sejam desenvolvidas com a segurança de que as antigas não foram quebradas.
+* **Alta Legibilidade e Manutenção:** Utiliza a sintaxe Gherkin (Given-When-Then) do Robot Framework, que permite que os testes sejam escritos em uma linguagem próxima à natural, facilitando o entendimento por parte de toda a equipe (QAs, Devs e POs).
+* **Integração com CI/CD:** O projeto já inclui um workflow para GitHub Actions (`executar-testes.yml`), permitindo que os testes sejam executados automaticamente a cada `push` ou `pull request`, fornecendo feedback rápido ao time de desenvolvimento.
+* **Relatórios Completos e Intuitivos:** Ao final de cada execução, o Robot Framework gera automaticamente relatórios detalhados (`report.html` e `log.html`) com o status de cada teste, passos executados e screenshots em caso de falha.
+* **Reutilização e Escalabilidade:** A estrutura baseada em `resources` permite que keywords e variáveis sejam compartilhadas entre diferentes suítes de teste, evitando duplicação de código e facilitando a expansão da cobertura de testes.
 
-2. **Crie um ambiente virtual (opcional, mas recomendado):**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+## ⚙️ Guia Completo de Instalação e Uso
 
-3. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
 
-   Se não houver um `requirements.txt`, instale manualmente:
-   ```bash
-   pip install robotframework
-   pip install robotframework-requests
-   pip install robotframework-faker
-   ```
+### Pré-requisitos
 
-4. **Configure o ambiente:**
-   - Certifique-se de que o arquivo `resources/env.resource` contém a variável `${URL}` apontando para o endpoint correto da API.
-   - Exemplo:
-     ```
-     ${URL}    http://localhost:3000/api/v1
-     ```
+Antes de começar, garanta que você tenha os seguintes softwares instalados:
+* [Git](https://git-scm.com/)
+* [Python](https://www.python.org/downloads/) (versão 3.8 ou superior)
+* Um navegador de sua preferência (Google Chrome, Firefox, etc.)
+* **WebDriver** correspondente ao seu navegador. **Esta etapa é crucial.**
 
-5. **Garanta que o backend da API Cinema está rodando:**
-   - Por padrão, os testes apontam para `http://localhost:3000/api/v1`.
-   - Ajuste a variável `${URL}` caso utilize outro endereço.
+### Passo 1: Clonar o Repositório
 
-## Como Executar os Testes
+Abra seu terminal e clone este repositório para sua máquina local.
 
-Execute todos os testes de uma vez:
 ```bash
-robot -d logs tests/api
+git clone <URL_DO_SEU_REPOSITORIO_GIT>
+cd project
 ```
 
-Execute apenas um arquivo de testes específico:
+### Passo 2: Configurar o Ambiente Python
+
+Utilizaremos um ambiente virtual (`venv`) para gerenciar as dependências do projeto.
+
 ```bash
-robot -d logs tests/api/sessions.robot
+# Criar o ambiente virtual (faça isso apenas uma vez)
+python -m venv .venv
+
+# Ativar o ambiente virtual
+# No Windows:
+.venv\Scripts\activate
+# No macOS/Linux:
+source .venv/bin/activate
 ```
 
-Os relatórios serão gerados na pasta `logs/`:
-- `log.html` — Detalhamento dos testes
-- `report.html` — Resumo executivo
-- `output.xml` — Saída padrão do Robot Framework
+Com o ambiente ativado, instale todas as dependências listadas no arquivo `requirements.txt`:
 
-## Estrutura do Projeto
+```bash
+pip install -r requirements.txt
+```
+> **Nota:** Se o seu `requirements.txt` ainda não estiver completo, ele deve conter pelo menos as seguintes bibliotecas para este projeto:
+> ```txt
+> # requirements.txt
+> robotframework
+> robotframework-seleniumlibrary
+> robotframework-requests
+> ```
 
-- `resources/` — Keywords reutilizáveis, variáveis e configurações
-- `resources/api/` — Keywords específicas para cada recurso da API (filmes, sessões, reservas, etc)
-- `tests/api/` — Casos de teste organizados por funcionalidade
-- `logs/` — Relatórios de execução
+### Passo 3: Configurar os WebDrivers
 
-## Contribuição
+Para que os testes de Web (UI) funcionem, o Selenium precisa controlar o navegador através de um WebDriver.
 
-Sinta-se à vontade para contribuir com novos testes, melhorias nas keywords ou sugestões de boas práticas.  
-Abra uma issue ou envie um pull request!
+1.  **Baixe o WebDriver** para o seu navegador (ex: [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/) para Google Chrome).
+2.  **Descompacte** o arquivo baixado.
+3.  **Adicione o local** do executável do WebDriver à variável de ambiente `PATH` do seu sistema operacional. Isso permite que o Robot Framework o encontre e o utilize.
 
-## Considerações Finais
+### Passo 4: Configurar as Variáveis de Ambiente do Projeto
 
-Este projeto é um aliado fundamental para equipes de desenvolvimento que buscam excelência, agilidade e segurança no ciclo de vida do software.  
-A automação de testes proporciona confiança para evoluir o sistema, reduz o retrabalho e eleva o padrão de qualidade do produto entregue.
+As configurações de ambiente, como a URL da aplicação a ser testada, estão no arquivo `resources/env.resource`.
+
+Abra o arquivo `resources/env.resource` e ajuste as variáveis conforme necessário. O principal alvo é a `TARGET_URL`:
+
+```robotframework
+*** Settings ***
+Resource    base.resource
+
+*** Variables ***
+${TARGET_URL}    http://localhost:3000/api/v1    # Altere para a URL da sua aplicação
+```
+
+### Passo 5: Executando os Testes
+
+Com o ambiente virtual ativado, utilize o comando `robot` para executar os testes.
+
+**1. Para executar TODOS os testes (API e Web):**
+```bash
+robot tests/
+```
+
+**2. Para executar apenas os testes de API:**
+```bash
+robot tests/api/
+```
+
+**3. Para executar uma suíte de testes específica (ex: `movies.robot`):**
+```bash
+robot tests/api/movies.robot
+```
+
+**4. Para executar testes marcados com uma TAG específica (ex: `smoke`):**
+```bash
+robot --include smoke tests/
+```
+
+### Visualizando os Relatórios
+
+Após a execução, os arquivos `log.html` e `report.html` serão criados na raiz do projeto. Abra-os em qualquer navegador para ver os resultados detalhados dos testes.
 
 ---
-**Desfrute de um desenvolvimento mais seguro, ágil e profissional com o poder dos testes automatizados!**
+Desenvolvido com ❤️ e foco na qualidade por Douglas
