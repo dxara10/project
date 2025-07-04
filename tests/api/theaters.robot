@@ -6,6 +6,7 @@ Suite Setup    Create Session API
 
 *** Test Cases ***
 Eu como admin posso cadastrar um teatro
+    [Tags]    ac-94
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -17,6 +18,7 @@ Eu como admin posso cadastrar um teatro
     Should Not Be Empty    ${theater_id}
 
 Eu como admin posso buscar um teatro por id
+    [Tags]    ac-93
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -28,6 +30,7 @@ Eu como admin posso buscar um teatro por id
     Should Be Equal    ${teatro['id']}    ${theater_id}
 
 Eu como admin posso atualizar um teatro
+    [Tags]    atualizarTeatro
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -40,6 +43,7 @@ Eu como admin posso atualizar um teatro
     Should Be Equal    ${teatro_atualizado['name']}    ${novo_nome}
 
 Eu como admin posso deletar um teatro
+    [Tags]    ac-97
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123

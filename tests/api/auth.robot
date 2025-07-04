@@ -6,6 +6,7 @@ Suite Setup    Create Session API
 
 *** Test Cases ***
 Cadastro E Login De Novo Usuario
+    [Tags]        ac-19
     ${name}=    Gerando Nome Aleatório
     ${email}=   Gerando Email Aleatório
     ${password}=    Set Variable    user123
@@ -20,6 +21,7 @@ Cadastro E Login De Novo Usuario
     Should Not Be Empty    ${token}    Token do usuário foi retornado!
 
 Cadastro E Login De Novo Admin
+    [Tags]        ac-46
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=   Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -34,14 +36,17 @@ Cadastro E Login De Novo Admin
     Should Not Be Empty    ${token}    Token do admin foi retornado!
 
 Login do Novo Usuario
+    [Tags]        ac-36
     ${token}=    Login API    ${email}    ${password}
     Should Not Be Empty    ${token}    Token do usuário foi retornado no login!
 
 Login do Novo Admin
+    [Tags]        ac-7
     ${token}=    Login API    ${admin_email}    ${admin_password}
     Should Not Be Empty    ${token}    Token do admin foi retornado no login!
 
 Atualizar Senha do Usuario
+    [Tags]        ac-90
     ${token}=    Login API    ${email}    ${password}
     Should Not Be Empty    ${token}    Token do usuário foi retornado no login!
     Log    Token do usuário: ${token}

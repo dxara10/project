@@ -6,9 +6,10 @@ Suite Setup    Preparar Suite Completa
 *** Keywords ***
 Preparar Suite Completa
     Create Session API
-    Preparar Ambiente Para Testes de Reserva
+    Ambiente Para Testes de Reserva
 
-Preparar Ambiente Para Testes de Reserva
+Ambiente Para Testes de Reserva
+    [Tags]    ac-34
     [Documentation]    Cria todos os dados necessários (usuário, admin, filme, etc.) UMA VEZ SÓ.
     ${admin_name}    ${admin_email}    ${admin_password}=    Gerar Dados Fake de Usuario
     Register Admin API    ${admin_name}    ${admin_email}    ${admin_password}
@@ -38,6 +39,7 @@ Limpar Ambiente dos Testes de Reserva
 
 *** Test Cases ***
 Eu posso criar uma reserva
+    [Tags]    ac-102
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     Should Be Equal As Integers    ${response.status_code}    201
@@ -46,6 +48,7 @@ Eu posso criar uma reserva
     Deletar Reserva API    ${USER_TOKEN}    ${json['data']['_id']}
 
 Eu posso buscar uma reserva por id
+    [Tags]    ac-101
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response_create}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     ${json_create}=    To JSON    ${response_create}
@@ -58,6 +61,7 @@ Eu posso buscar uma reserva por id
     Deletar Reserva API    ${USER_TOKEN}    ${reservation_id}
 
 Eu posso listar minhas reservas
+    [Tags]    ac-100
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response_create}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     ${json_create}=    To JSON    ${response_create}
@@ -70,6 +74,7 @@ Eu posso listar minhas reservas
     Deletar Reserva API    ${USER_TOKEN}    ${reservation_id}
 
 Eu posso cancelar uma reserva (atualizar status)
+    [Tags]    ac-104
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response_create}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     ${json_create}=    To JSON    ${response_create}
@@ -82,6 +87,7 @@ Eu posso cancelar uma reserva (atualizar status)
     Deletar Reserva API    ${USER_TOKEN}    ${reservation_id}
 
 Eu posso deletar uma reserva
+    [Tags]    ac-106
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response_create}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     ${json_create}=    To JSON    ${response_create}
@@ -93,6 +99,7 @@ Eu posso deletar uma reserva
     Should Be True    ${json['success']}
 
 Admin pode listar todas as reservas
+    [Tags]    ac-99
     ${seats}    ${ticketType}=    Gerar Dados Fake de Reserva
     ${response_create}=    Cadastrar Reserva API    ${USER_TOKEN}    ${SESSION_ID}    ${seats}    ${ticketType}
     ${json_create}=    To JSON    ${response_create}

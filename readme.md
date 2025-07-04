@@ -36,7 +36,7 @@ Antes de começar, garanta que você tenha os seguintes softwares instalados:
 Abra seu terminal e clone este repositório para sua máquina local.
 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO_GIT>
+git clone https://github.com/dxara10/project
 cd project
 ```
 

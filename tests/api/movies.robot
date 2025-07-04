@@ -7,6 +7,7 @@ Suite Setup    Create Session API
 
 *** Test Cases ***
 Eu como novo admin posso cadastrar um filme
+    [Tags]    ac-41
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=   Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -25,6 +26,7 @@ Eu como novo admin posso cadastrar um filme
     Should Not Be Empty    ${movie_id}
 
 Eu como admin posso buscar um filme por id
+    [Tags]    ac-26
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=   Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -37,6 +39,7 @@ Eu como admin posso buscar um filme por id
     Should Be Equal    ${filme['title']}    ${title}
 
 Eu como admin posso atualizar um filme
+    [Tags]    ac-15
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=   Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -49,6 +52,7 @@ Eu como admin posso atualizar um filme
     Should Be Equal    ${filme_atualizado['title']}    ${novo_title}
 
 Eu como admin posso deletar um filme
+    [Tags]    ac-44
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=   Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123

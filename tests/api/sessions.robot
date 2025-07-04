@@ -6,6 +6,7 @@ Suite Setup    Create Session API
 
 *** Test Cases ***
 Eu como admin posso criar uma sessão
+    [Tags]    ac-86
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -23,6 +24,7 @@ Eu como admin posso criar uma sessão
     Should Not Be Empty    ${session_id}
 
 Eu como admin posso buscar uma sessão por id
+    [Tags]    ac-82
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -39,6 +41,7 @@ Eu como admin posso buscar uma sessão por id
     Should Be Equal    ${sessao['movie']}    ${movie_id}
 
 Eu como admin posso atualizar uma sessão
+    [Tags]    ac-83
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
@@ -55,6 +58,7 @@ Eu como admin posso atualizar uma sessão
     Should Be Equal    ${sessao_atualizada['fullPrice']}    ${novo_fullPrice}
 
 Eu como admin posso deletar uma sessão
+    [Tags]    ac-84
     ${name}=    Gerando Nome Aleatório
     ${temp_email}=    Gerando Email Aleatório
     ${temp_password}=    Set Variable    admin123
