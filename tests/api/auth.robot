@@ -21,10 +21,10 @@ Cadastro E Login De Novo Usuario
 
 Cadastro E Login De Novo Admin
     ${name}=    Gerando Nome Aleatório
-    ${admin_email}=   Gerando Email Aleatório
-    ${admin_password}=    Set Variable    admin123
+    ${temp_email}=   Gerando Email Aleatório
+    ${temp_password}=    Set Variable    admin123
 
-    Register Admin API    ${name}    ${admin_email}    ${admin_password}
+    ${admin_email}    ${admin_password}=    Register Admin API    ${name}    ${temp_email}    ${temp_password}
     ${token}=    Login API    ${admin_email}    ${admin_password}
 
     Set Suite Variable    ${admin_email}

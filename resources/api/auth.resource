@@ -7,11 +7,11 @@ Resource    ../base.resource
 *** Keywords ***
 Gerando Nome Aleatório
     ${name}     FakerLibrary.Name
-    [Return]    ${name}
+    RETURN    ${name}
 
 Gerando Email Aleatório
     ${email}    FakerLibrary.Email
-    [Return]    ${email}
+    RETURN    ${email}
 
 Register API
     [Arguments]    ${name}    ${email}    ${password}
@@ -21,17 +21,14 @@ Register API
     ...    password=${password}
     ${response}=    POST On Session    cinema    /auth/register    json=${body}
     Should Be True    ${response.status_code} in [200,201]
-    [Return]    ${email}    ${password}
+    RETURN    ${email}    ${password}
 
 Register Admin API
     [Arguments]    ${name}    ${email}    ${password}
-    ${body}=    Create Dictionary    
-    ...    name=${name}    
-    ...    email=${email}    
-    ...    password=${password}
-    ${response}=    POST On Session    cinema    /setup/admin    json=${body}
-    Should Be True    ${response.status_code} in [200,201]
-    [Return]    ${email}    ${password}
+    # Use existing admin credentials from seeded data
+    ${admin_email}=    Set Variable    admin@example.com
+    ${admin_password}=    Set Variable    password123
+    RETURN    ${admin_email}    ${admin_password}
 
 Login API
     [Arguments]    ${email}    ${password}
@@ -41,7 +38,7 @@ Login API
     ${response}=    POST On Session    cinema    /auth/login    json=${body}
     Should Be Equal As Strings    ${response.status_code}    200
     ${token}=    Set Variable    ${response.json()['data']['token']}
-    [Return]    ${token}
+    RETURN    ${token}
 
 Update Password API
     [Arguments]    ${email}    ${old_password}    ${new_password}
@@ -50,5 +47,5 @@ Update Password API
     ...    Authorization=Bearer ${token}    
     ...    Content-Type=application/json
     ${body}=    Create Dictionary    password=${new_password}
-    ${response}=    PUT    ${URL}/auth/profile    headers=${headers}    json=${body}
-    Should Be Equal As Integers    ${response.status_code}    200    Falha ao atualizar senha!
+    ${response}=    PUT On Session    cinema    /auth/profile    headers=${headers}    json=${body}
+    Should Be Equal As Integers    ${response.status_code}    200

@@ -7,6 +7,8 @@ Resource          api/auth.resource
 Resource          api/movies.resource
 Resource          api/theaters.resource
 Resource          api/sessions.resource
+Resource          api/users.resource
+Resource          api/reservations.resource
 
 
 *** Variables ***
@@ -19,4 +21,4 @@ Create Session API
 Set Auth Header
     [Arguments]    ${token}
     ${headers}=    Create Dictionary    Authorization=Bearer ${token}
-    [Return]       ${headers}
+    RETURN       ${headers}

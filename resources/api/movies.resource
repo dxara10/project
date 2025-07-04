@@ -13,7 +13,7 @@ Gerar Dados Fake de Filme
     ${classification}    Set Variable    16+
     ${poster}            Set Variable    string
     ${releaseDate}      Set Variable    2025-06-28
-    [Return]    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${release_date}
+    RETURN    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}
 
 Cadastrar Filme API
     [Arguments]    ${token}    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${release_date}
@@ -30,7 +30,7 @@ Cadastrar Filme API
     ${response}=    POST On Session    cinema    /movies    headers=${headers}    json=${body}
     Should Be Equal As Integers    ${response.status_code}    201
     ${json}=    To JSON    ${response.content}
-    [Return]    ${json['data']['id']}
+    RETURN    ${json['data']['id']}
 
 Buscar Filme Por ID API
     [Arguments]    ${token}    ${movie_id}
@@ -38,7 +38,7 @@ Buscar Filme Por ID API
     ${response}=    GET On Session    cinema    /movies/${movie_id}    headers=${headers}
     Should Be Equal As Integers    ${response.status_code}    200
     ${json}=    To JSON    ${response.content}
-    [Return]    ${json['data']}
+    RETURN    ${json['data']}
 
 Atualizar Filme API
     [Arguments]    ${token}    ${movie_id}    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}
@@ -55,7 +55,7 @@ Atualizar Filme API
     ${response}=    PUT On Session    cinema    /movies/${movie_id}    headers=${headers}    json=${body}
     Should Be Equal As Integers    ${response.status_code}    200
     ${json}=    To JSON    ${response.content}
-    [Return]    ${json['data']}
+    RETURN    ${json['data']}
 
 Deletar Filme API
     [Arguments]    ${token}    ${movie_id}
@@ -63,4 +63,4 @@ Deletar Filme API
     ${response}=    DELETE On Session    cinema    /movies/${movie_id}    headers=${headers}
     Should Be Equal As Integers    ${response.status_code}    200
     ${json}=    To JSON    ${response.content}
-    [Return]    ${json['success']}
+    RETURN    ${json['success']}

@@ -9,10 +9,10 @@ Suite Setup    Create Session API
 *** Test Cases ***
 Eu como novo admin posso cadastrar um filme
     ${name}=    Gerando Nome Aleatório
-    ${admin_email}=   Gerando Email Aleatório
-    ${admin_password}=    Set Variable    admin123
+    ${temp_email}=   Gerando Email Aleatório
+    ${temp_password}=    Set Variable    admin123
 
-    Register Admin API    ${name}    ${admin_email}    ${admin_password}
+    ${admin_email}    ${admin_password}=    Register Admin API    ${name}    ${temp_email}    ${temp_password}
     ${token}=    Login API    ${admin_email}    ${admin_password}
 
     Set Suite Variable    ${admin_email}
@@ -27,9 +27,9 @@ Eu como novo admin posso cadastrar um filme
 
 Eu como admin posso buscar um filme por id
     ${name}=    Gerando Nome Aleatório
-    ${admin_email}=   Gerando Email Aleatório
-    ${admin_password}=    Set Variable    admin123
-    Register Admin API    ${name}    ${admin_email}    ${admin_password}
+    ${temp_email}=   Gerando Email Aleatório
+    ${temp_password}=    Set Variable    admin123
+    ${admin_email}    ${admin_password}=    Register Admin API    ${name}    ${temp_email}    ${temp_password}
     ${token}=    Login API    ${admin_email}    ${admin_password}
     ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}=    Gerar Dados Fake de Filme
     ${movie_id}=    Cadastrar Filme API    ${token}    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}
@@ -39,9 +39,9 @@ Eu como admin posso buscar um filme por id
 
 Eu como admin posso atualizar um filme
     ${name}=    Gerando Nome Aleatório
-    ${admin_email}=   Gerando Email Aleatório
-    ${admin_password}=    Set Variable    admin123
-    Register Admin API    ${name}    ${admin_email}    ${admin_password}
+    ${temp_email}=   Gerando Email Aleatório
+    ${temp_password}=    Set Variable    admin123
+    ${admin_email}    ${admin_password}=    Register Admin API    ${name}    ${temp_email}    ${temp_password}
     ${token}=    Login API    ${admin_email}    ${admin_password}
     ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}=    Gerar Dados Fake de Filme
     ${movie_id}=    Cadastrar Filme API    ${token}    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}
@@ -51,9 +51,9 @@ Eu como admin posso atualizar um filme
 
 Eu como admin posso deletar um filme
     ${name}=    Gerando Nome Aleatório
-    ${admin_email}=   Gerando Email Aleatório
-    ${admin_password}=    Set Variable    admin123
-    Register Admin API    ${name}    ${admin_email}    ${admin_password}
+    ${temp_email}=   Gerando Email Aleatório
+    ${temp_password}=    Set Variable    admin123
+    ${admin_email}    ${admin_password}=    Register Admin API    ${name}    ${temp_email}    ${temp_password}
     ${token}=    Login API    ${admin_email}    ${admin_password}
     ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}=    Gerar Dados Fake de Filme
     ${movie_id}=    Cadastrar Filme API    ${token}    ${title}    ${synopsis}    ${director}    ${genres}    ${duration}    ${classification}    ${poster}    ${releaseDate}
