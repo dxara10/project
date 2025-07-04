@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../../resources/base.resource
-Resource    ../../resources/api/movies.resource
-Resource    ../../resources/api/auth.resource
+
 
 Suite Setup    Create Session API
 
