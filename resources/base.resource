@@ -4,6 +4,10 @@ Library           Collections
 
 Resource          env.resource
 Resource          api/auth.resource
+Resource          api/movies.resource
+Resource          api/theaters.resource
+Resource          api/sessions.resource
+
 
 *** Variables ***
 ${TOKEN}          None
