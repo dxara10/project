@@ -20,7 +20,7 @@ ${TOKEN}          None
 
 *** Keywords ***
 Create Session API
-    Create Session    cinema    ${URL}    timeout=60
+    Create Session    cinema    ${URL}    timeout=20
 
 Set Auth Header
     [Arguments]    ${token}
