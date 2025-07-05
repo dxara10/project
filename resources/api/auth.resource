@@ -1,6 +1,6 @@
 *** Settings ***
 Library    FakerLibrary
-Library    Telnet.py
+Library    Telnet
 
 Resource    ../base.resource
 

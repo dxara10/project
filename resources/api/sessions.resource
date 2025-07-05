@@ -1,6 +1,6 @@
 *** Settings ***
 Library    FakerLibrary
-Library    DateTime.py
+Library    DateTime
 Resource    ../base.resource
 
 *** Keywords ***
