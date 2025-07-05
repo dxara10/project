@@ -1,6 +1,6 @@
 *** Settings ***
 Library    FakerLibrary
-Library    ../../venv/lib/python3.12/site-packages/robot/libraries/Telnet.py
+Library    Telnet.py
 
 Resource    ../base.resource
 

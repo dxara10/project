@@ -1,6 +1,6 @@
 *** Settings ***
 Library    FakerLibrary
-Library    ../../venv/lib/python3.12/site-packages/robot/libraries/DateTime.py
+Library    DateTime.py
 Resource    ../base.resource
 
 *** Keywords ***
