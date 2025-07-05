@@ -6,11 +6,11 @@ Resource    ../base.resource
 
 *** Keywords ***
 Gerando Nome Aleatório
-    ${name}     FakerLibrary.Name
+    ${name}=    FakerLibrary.Name
     RETURN    ${name}
 
 Gerando Email Aleatório
-    ${email}    FakerLibrary.Email
+    ${email}=    FakerLibrary.Email
     RETURN    ${email}
 
 Register API
@@ -21,7 +21,7 @@ Register API
     ...    password=${password}
     ${response}=    POST On Session    cinema    /auth/register    json=${body}
     Should Be True    ${response.status_code} in [200, 201]
-    [Return]    ${email}    ${password}
+    RETURN    ${email}    ${password}
 
 Register Admin API
     [Arguments]    ${name}    ${email}    ${password}
@@ -31,7 +31,7 @@ Register Admin API
     ...    password=${password}
     ${response}=    POST On Session    cinema    /setup/admin    json=${body}
     Should Be True    ${response.status_code} in [200, 201]
-    [Return]    ${email}    ${password}
+    RETURN    ${email}    ${password}
 
 Login API
     [Arguments]    ${email}    ${password}
@@ -41,7 +41,7 @@ Login API
     ${response}=    POST On Session    cinema    /auth/login    json=${body}
     Should Be Equal As Strings    ${response.status_code}    200
     ${token}=    Set Variable    ${response.json()['data']['token']}
-    [Return]    ${token}
+    RETURN    ${token}
 
 Update Password API
     [Arguments]    ${email}    ${old_password}    ${new_password}
