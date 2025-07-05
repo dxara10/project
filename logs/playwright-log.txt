@@ -1,0 +1,633 @@
+{"level":30,"time":"2025-07-05T03:29:04.989Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Listening on 127.0.0.1:55351"}
+(node:30357) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-07-05T03:29:05.077Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:29:07.518Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding browser to stack: firefox, version: 139.0"}
+{"level":30,"time":"2025-07-05T03:29:07.519Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:29:07.518Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-05T03:29:07.530Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-07-05T03:29:07.530Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2025-07-05T03:29:07.530Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:29:07.531Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Trace file: "}
+{"level":30,"time":"2025-07-05T03:29:07.601Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:29:07.602Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newContext"}
+{"level":30,"time":"2025-07-05T03:29:07.608Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:07.609Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:07.617Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:07.617Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:29:10.000Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:29:10.000Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:12.453Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:12.465Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:29:12.466Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:29:22.472Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:22.487Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:22.488Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:29:22.652Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:22.683Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.688Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.695Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.713Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.718Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:22.719Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:22.727Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:22.727Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:22.732Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.736Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.740Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:29:22.741Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=18bdf452-f947-484c-89db-5772eade2c99"}
+{"level":30,"time":"2025-07-05T03:29:22.741Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:22.745Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.749Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.754Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=18bdf452-f947-484c-89db-5772eade2c99"}
+{"level":30,"time":"2025-07-05T03:29:22.754Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:22.757Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:22.758Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-07-05T03:29:22.766Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:22.772Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.772Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:22.778Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:22.778Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:29:23.612Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:29:23.612Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:24.346Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:24.353Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:29:24.354Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:29:34.356Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:34.370Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:34.370Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:29:34.510Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:34.524Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.528Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.531Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.534Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.538Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:34.538Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:34.545Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:34.546Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:34.551Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.554Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.558Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:29:34.558Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=09b6233d-8b3f-4167-af08-62fdf3edc229"}
+{"level":30,"time":"2025-07-05T03:29:34.558Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:34.564Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.567Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.571Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=09b6233d-8b3f-4167-af08-62fdf3edc229"}
+{"level":30,"time":"2025-07-05T03:29:34.571Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:34.575Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:34.575Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-07-05T03:29:34.580Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:34.584Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.584Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:34.589Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:34.590Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:29:35.313Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:29:35.313Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:36.071Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:36.076Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:29:36.076Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:29:46.078Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:46.089Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:46.089Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:29:46.241Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:46.252Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.261Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.265Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.270Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.274Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:46.275Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:46.280Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:46.281Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-05T03:29:46.287Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.290Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.295Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:29:46.295Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=7daf810c-bb6c-4601-80bc-c1d32a99a22e"}
+{"level":30,"time":"2025-07-05T03:29:46.295Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:46.301Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.304Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.308Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=7daf810c-bb6c-4601-80bc-c1d32a99a22e"}
+{"level":30,"time":"2025-07-05T03:29:46.308Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:46.311Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:46.311Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2025-07-05T03:29:46.317Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closePage"}
+{"level":30,"time":"2025-07-05T03:29:46.322Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.322Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:46.327Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:46.327Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:29:46.947Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:29:46.947Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:29:47.609Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:29:47.634Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-05T03:29:47.635Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with text=Esqueci minha senha in page."}
+{"level":30,"time":"2025-07-05T03:29:57.639Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Esqueci minha senha')[22m
+
+    at internalClick (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11893:19)
+    at async click (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11874:18)
+    at async PlaywrightServer.click (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:57.650Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:29:57.650Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:29:57.791Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=2b79d0cb-a61c-4c13-a709-e2af038ac96f from context=c4cfc7ec-0998-49e0-8aaf-df5fd58683ad page stack"}
+{"level":30,"time":"2025-07-05T03:29:57.792Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+page.screenshot: Target page, context or browser has been closed
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+
+    at takeScreenshot (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10783:16)
+    at PlaywrightServer.takeScreenshot (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:57.857Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:57.857Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:57.865Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-05T03:29:58.725Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13122:59)
+    at PlaywrightServer.setTimeout (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13370:57)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-05T03:29:58.734Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:58.734Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:58.791Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:58.791Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:29:58.801Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:30:00.483Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding browser to stack: firefox, version: 139.0"}
+{"level":30,"time":"2025-07-05T03:30:00.484Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:30:00.484Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-05T03:30:00.487Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:00.487Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:00.492Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:00.492Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:00.555Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:02.045Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:02.045Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:03.279Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:03.287Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:03.287Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:30:03.627Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=f4d6696b-67ba-4310-b7ee-3e95deccf165 from context=09694c08-58e5-4943-a8a4-cdb1a3306b50 page stack"}
+================= Original suppressed error =================
+{"level":30,"time":"2025-07-05T03:30:03.628Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+locator.fill: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28)
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:03.634Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10725:11)
+    at takeScreenshot (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:34)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:03.634Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:03.646Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.646Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.650Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.650Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.655Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.655Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.662Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.663Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.669Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:03.672Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:03.691Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:03.697Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.697Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:03.703Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:03.703Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:03.709Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:04.084Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:04.084Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:04.769Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:04.774Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:04.775Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:14.776Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+{"level":30,"time":"2025-07-05T03:30:14.788Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:14.788Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:30:14.933Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:14.945Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.949Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.952Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.956Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.960Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.964Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.969Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.972Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:14.977Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:14.977Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=fe83d69f-94f5-46af-b12e-363df3df5e9c"}
+{"level":30,"time":"2025-07-05T03:30:14.978Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:14.982Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:14.994Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=48a88287-df8b-4173-8656-454b0c1fe40a from context=4d6cd455-6efa-45a6-b169-5362bdf00142 page stack"}
+{"level":30,"time":"2025-07-05T03:30:14.998Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:15.004Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:15.004Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:15.011Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:15.011Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:15.037Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:15.445Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:15.445Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:16.118Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:16.127Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:16.127Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:30:26.129Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:26.139Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:26.139Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:30:26.224Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:26.235Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.239Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.242Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.246Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.249Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.252Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.257Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.261Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.264Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:26.265Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=631950e9-121b-4703-b90c-e9e54956b3ff"}
+{"level":30,"time":"2025-07-05T03:30:26.265Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:26.267Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:26.279Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=f85d9873-96b6-43c1-a1bf-88eb2bdec220 from context=7cf7c8f0-8fa9-4e31-b95d-1a5741a93899 page stack"}
+{"level":30,"time":"2025-07-05T03:30:26.283Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:26.286Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.286Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:26.292Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:26.292Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:26.311Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:26.683Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:26.683Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:27.367Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:27.374Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:27.374Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:30:37.376Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:37.389Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:37.389Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:30:37.497Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:37.515Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.518Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.522Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.526Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.530Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.534Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.539Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.544Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:37.548Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:37.548Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=d9b24f23-bd97-4f43-a290-3d1b71e68c3d"}
+{"level":30,"time":"2025-07-05T03:30:37.548Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:37.552Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:37.567Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=4097fe20-fd62-491f-a1da-d5c75c8edbeb from context=b6dc076c-d825-4a06-bd03-d019a6c5a591 page stack"}
+{"level":30,"time":"2025-07-05T03:30:37.571Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:37.575Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-05T03:30:38.329Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13122:59)
+    at PlaywrightServer.setTimeout (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13370:57)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:38.338Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:38.338Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:38.364Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:38.364Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:38.369Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:30:39.413Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding browser to stack: firefox, version: 139.0"}
+{"level":30,"time":"2025-07-05T03:30:39.413Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:30:39.413Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-05T03:30:39.417Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:39.417Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:39.423Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:39.423Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:39.485Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:40.834Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:40.835Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:42.504Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:42.514Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:42.514Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:30:52.517Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:30:52.529Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:52.529Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-7.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:30:52.661Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:30:52.681Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.684Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.689Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.694Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.698Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.702Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.710Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.714Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.719Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:52.719Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=3d50cbf2-247b-444f-abfc-8d7a9b2a7f75"}
+{"level":30,"time":"2025-07-05T03:30:52.719Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:52.724Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:52.736Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=dde01ca8-167e-4649-b0d2-d2074c5c5ae4 from context=cd04a98f-0a29-41e6-bbea-bf0078539efc page stack"}
+{"level":30,"time":"2025-07-05T03:30:52.743Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:30:52.747Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.747Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:30:52.751Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:52.751Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:30:52.785Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:30:53.165Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:30:53.165Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:30:53.868Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:30:53.873Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:30:53.874Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:31:03.874Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:03.885Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:03.885Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-8.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:31:04.018Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:04.037Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.041Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.045Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.049Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.053Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.057Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.065Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.072Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.076Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:04.076Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=ec0f0792-e861-471d-ac8b-7420073c1885"}
+{"level":30,"time":"2025-07-05T03:31:04.076Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:04.081Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:04.094Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=743107a7-a862-4d03-8426-8bedd306a87a from context=5ce77135-9262-4676-baf4-c797db82e9d2 page stack"}
+{"level":30,"time":"2025-07-05T03:31:04.097Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:04.101Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.101Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:04.105Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:04.105Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:31:04.124Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:04.539Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:31:04.539Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:05.211Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:05.218Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:31:05.218Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:31:15.220Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:15.233Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:15.233Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-9.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:31:15.353Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:15.366Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.369Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.372Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.377Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.380Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.383Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.388Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.393Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.397Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:15.397Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=7ddad5ab-3911-4903-b224-701f6e0877d2"}
+{"level":30,"time":"2025-07-05T03:31:15.397Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:15.401Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:15.414Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=0d5d8734-ad55-4ec6-960c-8ea1e4b2c05b from context=f998bd33-e970-4b57-965d-f5173d80cfb3 page stack"}
+{"level":30,"time":"2025-07-05T03:31:15.417Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:15.420Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.421Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:15.426Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:15.426Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:31:15.450Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:15.854Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:31:15.854Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:16.640Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:16.651Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:31:16.651Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2025-07-05T03:31:26.653Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('#email')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:26.664Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:26.664Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-10.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:31:26.774Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:26.795Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.801Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.806Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.809Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.814Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.818Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.824Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.828Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:26.833Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:26.833Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=f31a99a6-62d8-4d2d-b063-9b7420e4daab"}
+{"level":30,"time":"2025-07-05T03:31:26.833Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:26.838Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:26.851Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=4178be45-e9b4-4d50-802f-0d39a028d655 from context=c7d53af5-18ea-4e4d-90fb-690b273dc0de page stack"}
+{"level":30,"time":"2025-07-05T03:31:26.854Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:26.859Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-05T03:31:27.651Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13122:59)
+    at PlaywrightServer.setTimeout (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13370:57)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:27.657Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:27.657Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:28.269Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:28.270Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:28.276Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:31:29.294Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding browser to stack: firefox, version: 139.0"}
+{"level":30,"time":"2025-07-05T03:31:29.294Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-05T03:31:29.294Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-05T03:31:29.297Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:29.298Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:29.302Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:29.302Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-05T03:31:29.377Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:30.647Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-05T03:31:30.647Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:32.040Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-05T03:31:32.047Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-05T03:31:32.047Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Strict mode is enabled, find Locator with input[name=\"name\"] in page."}
+{"level":30,"time":"2025-07-05T03:31:42.048Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[name="name"]')[22m
+
+    at fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11850:17)
+    at async PlaywrightServer.fillText (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:42.061Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:42.061Z","pid":30357,"hostname":"cortes-Inspiron-7520","Take screenshot with options: ":{"path":"/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/logs/browser/screenshot/fail-screenshot-11.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-05T03:31:42.207Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-05T03:31:42.229Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.234Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.238Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.244Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.249Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.252Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.259Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.263Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.267Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active context"}
+{"level":30,"time":"2025-07-05T03:31:42.268Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changing current active page: page=dde73206-cf89-4370-bee9-f2c45cfde843"}
+{"level":30,"time":"2025-07-05T03:31:42.268Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Changed active page"}
+{"level":30,"time":"2025-07-05T03:31:42.272Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:42.288Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Removed page=bfddb986-e38a-4043-a63f-fa1031a2fdce from context=1424c257-f63a-40f1-8fe7-e9d14d21e8be page stack"}
+{"level":30,"time":"2025-07-05T03:31:42.297Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-05T03:31:42.300Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.300Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.308Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.308Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.313Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.313Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.325Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.326Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.330Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.330Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.343Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.343Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:42.349Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-05T03:31:43.142Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13122:59)
+    at PlaywrightServer.setTimeout (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13370:57)
+    at Object.onReceiveHalfClose (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/home/cortes/Documents/Compass_Estágio/GIT/Schollarship_Compass/Documentos/Sprint_8/Cinema/project/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-05T03:31:43.152Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:43.152Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-05T03:31:43.236Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-05T03:31:43.236Z","pid":30357,"hostname":"cortes-Inspiron-7520","msg":"End of node method closeAllBrowsers"}
