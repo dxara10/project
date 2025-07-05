@@ -25,10 +25,13 @@ Register API
 
 Register Admin API
     [Arguments]    ${name}    ${email}    ${password}
-    # Use existing admin credentials from seeded data
-    ${admin_email}=    Set Variable    admin@example.com
-    ${admin_password}=    Set Variable    password123
-    RETURN    ${admin_email}    ${admin_password}
+    ${body}=    Create Dictionary    
+    ...    name=${name}    
+    ...    email=${email}    
+    ...    password=${password}
+    ${response}=    POST On Session    cinema    /setup/admin    json=${body}
+    Should Be True    ${response.status_code} in [200,201]
+    RETURN    ${email}    ${password}
 
 Login API
     [Arguments]    ${email}    ${password}
