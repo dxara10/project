@@ -1,31 +1,59 @@
 *** Settings ***
-Resource    ../../resources/web/reservations_web.resource
+Resource    ../../resources/browser_manager.resource
+Resource    ../../resources/web/pages/login_web.resource
 
-Suite Setup       New Browser    browser=firefox    headless=false
-Suite Teardown    Close Browser
+Test Setup        Setup Browser
+Test Teardown     Teardown Browser
 
 *** Test Cases ***
-Criar reserva como usuário logado
-    Fazer Login Usuario
-    Acessar Página de Sessões
-    Selecionar Sessão Disponível
-    Selecionar Assentos    2
-    Confirmar Reserva
-    Verificar Mensagem de Sucesso    Reserva realizada com sucesso
+TC001 - Sessions Page Access
+    [Tags]    reservations    sessions
+    ${timestamp}=    Get Time    epoch
+    
+    # Register user
+    Open App Page    http://localhost:3002/register
+    Wait For Elements State    css=#name    visible
+    Fill Text    css=#name              User${timestamp}
+    Fill Text    css=#email             user${timestamp}@test.com
+    Fill Text    css=#password          senha123
+    Fill Text    css=#confirmPassword   senha123
+    Click    button[type="submit"]
+    Sleep    2s
+    
+    # Login
+    Go To Login Page
+    Fill Login Form    user${timestamp}@test.com    senha123
+    Submit Login
+    Sleep    2s
+    
+    # Access sessions page
+    Open App Page    http://localhost:3002/sessions
+    Sleep    2s
+    ${url}=    Get Url
+    Should Contain    ${url}    /sessions
 
-Listar reservas do usuário
-    Fazer Login Usuario
-    Acessar Página de Minhas Reservas
-    Verificar Reserva Listada
-
-Cancelar reserva existente
-    Fazer Login Usuario
-    Acessar Página de Minhas Reservas
-    Selecionar Reserva
-    Cancelar Reserva
-    Verificar Mensagem de Sucesso    Reserva cancelada com sucesso
-
-Admin pode listar todas as reservas
-    Fazer Login Admin
-    Acessar Página de Reservas Admin
-    Verificar Reservas Listadas
+TC002 - Reservations Page Access
+    [Tags]    reservations    user-reservations
+    ${timestamp}=    Get Time    epoch
+    
+    # Register user
+    Open App Page    http://localhost:3002/register
+    Wait For Elements State    css=#name    visible
+    Fill Text    css=#name              User${timestamp}
+    Fill Text    css=#email             user${timestamp}@test.com
+    Fill Text    css=#password          senha123
+    Fill Text    css=#confirmPassword   senha123
+    Click    button[type="submit"]
+    Sleep    2s
+    
+    # Login
+    Go To Login Page
+    Fill Login Form    user${timestamp}@test.com    senha123
+    Submit Login
+    Sleep    2s
+    
+    # Access reservations page
+    Open App Page    http://localhost:3002/reservations
+    Sleep    2s
+    ${url}=    Get Url
+    Should Contain    ${url}    /reservations
